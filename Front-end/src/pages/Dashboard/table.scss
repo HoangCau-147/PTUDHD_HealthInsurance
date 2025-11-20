@@ -1,0 +1,9 @@
+.row_table {
+    height: 100%;
+    width: 100%;
+}
+
+.table-responsive {
+    height: 400px;
+    overflow-y: auto; /* Sử dụng 'scroll' để có thanh cuộn y khi cần thiết */
+}

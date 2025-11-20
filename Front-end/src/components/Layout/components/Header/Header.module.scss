@@ -1,0 +1,168 @@
+.wrapper {
+    height: var(--default-height-header_footer);
+    width: var(--default-width);
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+    background-color: white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.inner {
+    height: 100%;
+    width: 81%;
+
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    overflow: hidden;
+    display: flex;
+}
+
+.item {
+    padding: 0.5em;
+    width: 12em;
+    min-width: 0;
+    // background-color: #1b5385;
+    color: white;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+.four {
+    flex: 4;
+}
+
+.one {
+    flex: 1;
+}
+
+.logo {
+    // background-color: black;
+    margin-right: 1rem;
+    margin-left: 3rem;
+    img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+    li {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 300;
+
+        a {
+            color: #126131;
+        }
+
+        &:hover {
+            scale: 1.1;
+            a {
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+.active_navbar {
+    scale: 1.1;
+    a {
+        font-weight: 900;
+    }
+}
+
+.right_navbar {
+    height: 100%;
+    width: 100%;
+}
+
+.notoken {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.login-btn,
+.logup-btn {
+    cursor: pointer;
+    color: #126131;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    background-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5%;
+    padding: 1rem 2.4rem;
+
+    a {
+        color: #126131;
+    }
+
+    &:hover {
+        font-style: Bold;
+        font-weight: 800;
+        cursor: pointer;
+        background-color: #126131;
+        a {
+            color: white;
+            font-weight: 800;
+        }
+    }
+}
+
+.login-btn,
+.logout-btn {
+    font-style: Bold;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: #126131;
+    a {
+        color: white;
+        font-weight: 800;
+    }
+}
+
+.logout-btn {
+    padding: 0.6rem 2.4rem;
+    :first-child {
+        color: white;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    &:hover {
+        background-color: white;
+        border: 1px solid #126131;
+        :first-child {
+            color: #126131;
+            font-size: 2rem;
+            font-weight: 800;
+        }
+    }
+}
+
+.account {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 3rem;
+}

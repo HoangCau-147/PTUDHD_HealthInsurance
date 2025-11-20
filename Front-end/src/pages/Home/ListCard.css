@@ -1,0 +1,169 @@
+.container-list {
+    padding: 1.2rem 0.8rem;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start; /* Adjusted 'justify-content' */
+}
+
+.card_item {
+    padding: 0.8rem 0.8rem;
+    width: 24%;
+    text-align: center;
+    box-sizing: border-box; /* Added to include padding in width */
+    /* background-color: red; */
+}
+
+.container-list .card_item img {
+    margin-bottom: 10px;
+    border-radius: 0; /* Remove or keep this line based on your preference */
+    align-items: center;
+    transition: transform 0.2s;
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #126131;
+}
+.container-list .card_item:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.container-list .card_inner {
+    background: rgb(0 0 0 / 12%);
+    border-radius: 6px;
+    padding: 1rem 0.8rem;
+    min-width: 225px;
+    min-height: 315px;
+    max-height: 370px;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.24);
+}
+
+.container-list .card_item .description {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin: 5px 0 10px;
+    word-wrap: break-word;
+    color: #888b9e;
+    text-overflow: ellipsis;
+    white-space: normal; /* Set to normal to allow multiple lines */
+    overflow: hidden;
+    max-height: 50px; /* Adjust the max height to show around three lines */
+    min-height: 50px;
+}
+
+.container-list .card_item:hover .description {
+    overflow: auto; /* Enable scrollbar on hover if needed */
+    max-height: none; /* Remove the max-height constraint on hover */
+}
+
+.container-list .card_item .name {
+    color: #126131;
+    font-weight: 600;
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container-list .card_item .gitDetail {
+    font-size: 14px;
+    line-height: 24px;
+    color: #7b8ca0;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.detail-box p {
+    margin: 2px;
+    padding: 2px 2px;
+    /* border: 2px solid #c7e6fa; */
+    font-size: 10px;
+    font-weight: 600;
+    color: #788697;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    margin: 10px auto;
+    width: 45%;
+    padding: 1rem 1rem;
+    background: hsl(138, 84%, 22%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    cursor: pointer;
+    /* box-shadow: 0 10px 10px hsl(225, 100%, 94%); */
+}
+
+.detail-btn {
+    background-color: rgb(0 0 0 / 12%);
+    border-bottom: 1px solid #126131;
+    color: #126131;
+
+    &:hover {
+        background-color: #126131;
+        color: white;
+        border-bottom: 1px solid #126131;
+        text-transform: uppercase;
+    }
+}
+
+.buynow:hover {
+    background-color: rgb(0 0 0 / 3%);
+    color: #126131;
+    border: 1px solid #126131;
+    text-transform: uppercase;
+}
+
+/* Add some space between buttons */
+.btn-card + .btn-card {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container .card_item {
+        width: 33%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container .card_item {
+        width: 50%;
+    }
+    .wrapper .header {
+        font-size: 16px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .container .card_item {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container .card_item {
+        width: 100%;
+    }
+}
+
+.no-products-message {
+    align-self: center;
+}

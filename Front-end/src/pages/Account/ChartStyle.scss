@@ -1,0 +1,58 @@
+.spend {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    > span {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #066132;
+    }
+}
+.chart {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 100px;
+    .barchart {
+        width: 60%;
+        height: 100%;
+        margin-left: 2rem;
+        // margin-right: 2rem;
+    }
+    .piechart {
+        width: 30%;
+        // margin-left: 2rem;
+        height: 30%;
+    }
+}
+.insurance_policy {
+    width: 100%;
+    position: relative;
+    padding: 2rem 0;
+    text-align: center;
+
+    > span {
+        background-color: white;
+        position: absolute;
+        top: 0.4rem;
+        left: 34%;
+        padding: 0 10px;
+    }
+    > select {
+        width: 40%;
+        padding: 1rem;
+        border-color: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+
+        &:focus {
+            outline: 1px solid #066132;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --primary: #1e826a;
+    --secondary: #58c479;
+    --tertiary: #ffdc0e;
+    --quaternary: #ebad0a;
+    --quinary: #404040;
+    --white: #fff;
+    --default-width: 100vw;
+    --default-height-header_footer: 80px;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    width: var(--default-width);
+}
+/* Thiết lập thanh scroll dọc */
+::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.4rem; /* Thêm chiều cao cho thanh scroll ngang */
+}
+
+/* Thiết lập thumb cho thanh scroll dọc và ngang */
+::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: #797979;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Khi hover lên thanh scroll, thay đổi màu */
+::-webkit-scrollbar-thumb:hover {
+    background: #222224;
+}
+
+/* Thiết lập thanh scroll track dọc và ngang */
+::-webkit-scrollbar-track {
+    background: #f9f9f9;
+}
+
+/* Ẩn thanh scroll ngang mặc định của trình duyệt */
+::-webkit-scrollbar-horizontal {
+    display: none;
+}
+// @media (min-width: 1440px) {
+//     html {
+//         zoom: 1.5;
+//     }
+// }
+
+// @media (min-width: 2560px) {
+//     html {
+//         zoom: 1.7;
+//     }
+// }
+
+// @media (min-width: 3860px) {
+//     html {
+//         zoom: 2.5;
+//     }
+// }\

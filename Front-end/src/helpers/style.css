@@ -1,0 +1,50 @@
+/* CSS cho component chính */
+.preview-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease-in-out;
+  z-index: 99;
+}
+
+.preview-image.open {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* CSS cho nội dung bên trong component */
+.preview-image > div {
+  position: relative;
+  width: 80%; /* Sử dụng width thay vì max-width */
+  max-height: 80%;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%; /* Sửa chiều rộng để giữ nguyên tỷ lệ khung hình */
+  height: auto; /* Chiều cao tự động để giữ nguyên tỷ lệ khung hình */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CSS cho nút đóng */
+.preview-image button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background: #fff;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.preview-image button:hover {
+  color: white;
+}

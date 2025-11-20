@@ -1,0 +1,7 @@
+src
+----------------------------------------------------------------------------
+    pages: 
+    ---------------
+    admin: chứa UI các trang của admin
+    user: chứa UI các trang của user
+    index.js: export các trang trong pages

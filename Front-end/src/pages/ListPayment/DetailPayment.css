@@ -1,0 +1,61 @@
+#deltai-payment-container  {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+#deltai-payment-container > div {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box; /* Đảm bảo rằng padding không tăng kích thước của container */
+    background-color: white ;
+  }
+  
+  .top-section {
+    padding-right: 20px;
+  }
+  
+  .bottom-section {
+    margin-top: 20px;
+    overflow: auto; /* Bật tính năng overflow để xử lý trường hợp table bị tràn ra khỏi border */
+  }
+  
+  .info {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .column p {
+    margin: 0;
+  }
+  
+  .claim table {
+    width: calc(100% - 20px); /* Sử dụng calc để điều chỉnh chiều rộng của table, trừ đi padding của container */
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .claim th, .claim td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .claim th {
+    background-color: #f2f2f2;
+  }
+  

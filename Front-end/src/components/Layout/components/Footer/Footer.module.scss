@@ -1,0 +1,9 @@
+.wrapper {
+    height: var(--default-height-header_footer);
+    border-top: 1px solid rgb(0 0 0 / 12%);
+    box-shadow: 1px 1px 1px rgb(0 0 0 / 12%);
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black;
+}

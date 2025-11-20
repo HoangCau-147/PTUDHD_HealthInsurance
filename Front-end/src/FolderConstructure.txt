@@ -1,0 +1,32 @@
+src
+----------------------------------------------------------------------------
+    assets: 
+    ---------------
+    admin: chứa tất cả hình ảnh bên ngoài của trang admin
+    user: chứa tất cả hình ảnh bên ngoài của trang user
+--------------------------------------------------------------------------
+    components: chứa các components dùng chung của các trang
+
+--------------------------------------------------------------------------
+    pages: 
+    ---------------
+    admin: chứa UI các trang của admin
+    user: chứa UI các trang của user
+    index.js: export các trang trong pages
+
+--------------------------------------------------------------------------
+    style: chứa các style css chung của các trang
+
+--------------------------------------------------------------------------
+    utils: chứa các biến, format dùng chung của project
+
+--------------------------------------------------------------------------
+    services  # Các dịch vụ (services) cho việc gọi API
+
+----------------------------------------------------------------------------
+    routes  # Các router điều hướng các trang
+    privateRoutes: các router riêng tư
+    publicRoutes: các router được phép public
+
+----------------------------------------------------------------------------
+    layout  # cấu hình các layout của trang web

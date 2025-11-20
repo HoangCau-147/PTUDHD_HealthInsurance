@@ -1,0 +1,109 @@
+.login-form {
+    // height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register {
+    max-width: 600px; /* Adjust the max-width to your preference */
+    width: 100%;
+    display: flex;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.title_signin {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #126131;
+}
+
+#form {
+    width: 100%;
+    margin: auto; /* Center the form horizontally */
+    padding: 2em; /* Adjust padding as needed */
+
+    > input,
+    .btn {
+        width: 100%; /* Make inputs and button full-width */
+        box-sizing: border-box; /* Include padding and border in the width */
+        border: 1px solid #e9ecef;
+        padding: 0.9em 1em;
+        margin-bottom: 1em; /* Add margin between inputs */
+    }
+
+    > input:focus {
+        outline: none;
+    }
+
+    > .btn {
+        text-transform: uppercase;
+        background-color: #126131;
+        color: #e9ecef;
+        font-size: 1em;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+.flex {
+    display: flex;
+    gap: 1em;
+
+    &-col {
+        flex-direction: column;
+    }
+
+    :nth-child(2) {
+        color: #126131;
+    }
+}
+
+.register {
+    display: flex;
+    max-width: 978px;
+    width: 100vw;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    background-color: white;
+
+    .col-1,
+    .col-2 {
+        flex: 1;
+    }
+
+    .col-1 {
+        padding: 3em 1em; /* Adjust padding as needed */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Center items horizontally */
+        text-align: center;
+    }
+
+    .col-2 img {
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        @media screen and (max-width: 860px) {
+            display: none;
+        }
+    }
+}
+
+.register-link {
+    text-decoration: underline;
+    text-decoration-color: #126131;
+    color: #126131;
+
+    &:hover {
+        text-decoration: none;
+        font-weight: 800;
+        color: #126131;
+    }
+}

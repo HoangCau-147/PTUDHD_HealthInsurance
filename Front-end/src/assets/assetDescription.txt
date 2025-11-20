@@ -1,0 +1,6 @@
+src
+----------------------------------------------------------------------------
+    assets: 
+    ---------------
+    admin: chứa tất cả hình ảnh bên ngoài của trang admin
+    user: chứa tất cả hình ảnh bên ngoài của trang user

@@ -1,0 +1,5 @@
+src
+----------------------------------------------------------------------------
+    routes  # Các router điều hướng các trang
+    privateRoutes: các router riêng tư
+    publicRoutes: các router được phép public

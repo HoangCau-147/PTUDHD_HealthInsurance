@@ -1,0 +1,80 @@
+.register-form {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.register {
+    max-width: 978px;
+    width: 100vw;
+    display: flex;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#form {
+    width: 100%;
+    padding: 2em;
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    > input,
+    .btn {
+        border: 1px solid #e9ecef;
+        padding: 0.9em 1em;
+        width: 100%; /* Make inputs and button full width */
+        box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    }
+
+    > input:focus {
+        outline: none;
+    }
+
+    > input::placeholder {
+        color: black;
+    }
+    > .btn {
+        text-transform: uppercase;
+        background-color: #126131;
+        color: #e9ecef;
+        font-size: 1em;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+.col-1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.col-2 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.form-image {
+    width: 472px;
+    // height: 1068.03px;
+    object-fit: contain;
+}
+
+.login-link {
+    text-decoration: underline;
+    text-decoration-color: #126131;
+    color: #126131;
+
+    &:hover {
+        text-decoration: none;
+        font-weight: 800;
+        color: #126131;
+    }
+}
