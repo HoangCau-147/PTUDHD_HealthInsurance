@@ -9,7 +9,7 @@
 
 ---
 <p align="center">
- <img src="/Report/logo.png" alt="Logo" height = "400"></a>
+ <img src="/Report/Logo.png" alt="Logo" height = "400"></a>
 </p>
 
 <h2 align="center">Health Insurance Management System</h2>
